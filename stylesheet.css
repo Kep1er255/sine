@@ -1,0 +1,55 @@
+/* styles.css */
+
+/* 全体の設定 */
+body {
+    font-family: 'Courier New', Courier, monospace; /* レトロなフォント */
+    background-color: #000; /* 背景色を黒に設定 */
+    color: #00ff00; /* デフォルトテキスト色を緑に設定 */
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em; /* テキストサイズを小さく設定 */
+}
+
+/* メインコンテンツの設定 */
+main {
+    padding: 20px;
+}
+
+/* タイピングエフェクトの設定 */
+#typed-text {
+    white-space: pre-wrap; /* 改行を表示するため */
+    overflow: hidden;
+    border-right: .15em solid #00ff00; /* カーソル風の装飾 */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* タイピングアニメーション */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* カーソル点滅アニメーション */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ff00; }
+}
+
+/* QRコードとリンクの設定 */
+#qr-section {
+    margin-top: 20px;
+}
+
+#qr-code {
+    width: 150px; /* QRコードのサイズ調整 */
+    height: 150px;
+}
+
+a {
+    color: #00ffff; /* リンクの色を水色に設定 */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* ホバー時に下線を追加 */
+}
